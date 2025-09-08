@@ -1,6 +1,11 @@
-import './App.css'
-import Header from './Components/Header/Header'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Home from './Pages/Home/Home'
+import About from './Pages/About/About'
+import Contact from './Pages/Contact/Contact'
+import Portfolio from './Pages/Portfolio/Portfolio'
+import Services from './Pages/Services/Services'
+import Blog from './Pages/Blog/Blog'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
 
@@ -8,8 +13,16 @@ function App() {
   return (
     <>
     <BrowserRouter>
-     <Header/>
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
     </BrowserRouter>
+
     </>
   )
 }

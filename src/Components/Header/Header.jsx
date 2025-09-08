@@ -1,14 +1,14 @@
 
-import './Header.css'
-import Button from '@mui/material/Button';
+import './Headers.css'
 import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   return (
     <div className='background-image'>
         <div className="nav-bar">
         <div className="nav-bar-1">
-        <Link to="/">HOME</Link>
+        <Link to="/home">HOME</Link>
         <Link to="/about">ABOUT</Link>
         <Link to="/services">SERVICES</Link>
         </div>
