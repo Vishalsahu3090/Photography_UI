@@ -91,7 +91,6 @@ const About = () => {
       <p className='full-para'>Your wedding day is a once-in-a-lifetime event, and choosing the right photographer is essential to preserving its magic for years to come. I would be honored to be a part of your special day.</p>
       <button>Book Now</button>
       </div>
-
       <div className="two-img">
         <img  className='img1' src={one} />
         <img className='img2' src={two} />
