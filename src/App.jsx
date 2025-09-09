@@ -7,6 +7,8 @@ import Portfolio from './Pages/Portfolio'
 import Services from './Pages/Services'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
+
+
 function App() {
 
 
@@ -21,6 +23,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/services' element={<Services/>}/>
           <Route path='/portfolio' element={<Portfolio/>}/>
+          
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

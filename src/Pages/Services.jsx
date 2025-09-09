@@ -1,13 +1,22 @@
-import React from "react";
-
-import { Box, Typography, Grid } from "@mui/material";
+import React, { useState } from "react";
+import { Box, Typography, Grid, Button, Stack } from "@mui/material";
+import {useMediaQuery} from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+import Header2 from "../Components/Header2/Header2.jsx";
 
 function Services() {
+
+  // variables to check scren size
+  const isSmall = useMediaQuery("(max-width:767px)");   
+  const isLarge = useMediaQuery("(min-width:1024px)");
+  const show=isSmall || isLarge;  
+
   return (
     <>
-     {/* Main Container */}
+       {/* Header */}
+      <Header2 />
+      {/* First Section */}
       <Box
         sx={{
           width: "90%",
@@ -23,98 +32,491 @@ function Services() {
             letterSpacing: "8px",
             color: "rgb(187,160,133)",
             textAlign: "center",
-            fontSize: { xs: 20, sm: 30},
-            fontFamily:'Raleway'
+            fontSize: { xs: 20, sm: 30 },
+            fontFamily: "Raleway",
           }}
         >
           SERVICES
         </Typography>
 
-          {/* Sub Heading */}
+        {/* Sub Heading */}
         <Typography
           sx={{
             color: "rgb(79,79,79)",
             fontWeight: "100",
             textAlign: "center",
             fontSize: { xs: 20, sm: 30, md: 40 },
-            fontFamily:"Cormorant Garamond"
+            fontFamily: "Cormorant Garamond",
           }}
           gutterBottom
         >
           PHOTOGRAPHY PACKAGES
         </Typography>
 
-         {/* Servcies Card */}
+        {/* Servcies Card */}
         <Grid container spacing={2}>
-
-            {/* Card-one */}
+          {/* Card-one */}
           <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Card>
+            <Card sx={{ boxShadow: 3, height: { sx: 600, sm: 700, lg: 850 } }}>
               <Box
-              component={'img'}
-                sx={{width:"100%", height: 400 }}
+                component={"img"}
+                sx={{
+                  width: "100%",
+                  height: { sx: 300, sm: 400, lg: 500 },
+                  p: 2,
+                }}
                 src="https://res.cloudinary.com/dcruh7av2/image/upload/v1757331324/Service-one-pic_ha4f75.png"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center",color:"rgb(89,89,89)",fontSize:{xs:30,sm:40,md:50}, fontFamily:"Ephesis"}} >
-                 Wedding
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{
+                    textAlign: "center",
+                    color: "rgb(89,89,89)",
+                    fontSize: { xs: 30, sm: 40, md: 50 },
+                    fontFamily: "Ephesis",
+                  }}
+                >
+                  Wedding
                 </Typography>
-                <Typography variant="body2" sx={{fontSize:{xs:15,sm:20,md:28},fontFamily:"Cormorant Garamond", }}>
-                 500+ High-Quality Photos <br />
-                 6 Hours HD Footage <br />
-                 *Additional Photographer
-                  subject to charge <br />
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: { xs: 15, sm: 20, md: 28 },
+                    fontFamily: "Cormorant Garamond",
+                    p: 2,
+                  }}
+                >
+                  500+ High-Quality Photos <br />
+                  6 Hours HD Footage <br />
+                  *Additional Photographer subject to charge
+                </Typography>
+
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{
+                    color: "rgb(187,169,133)",
+                    fontFamily: "Raleway",
+                    letterSpacing: 3,
+                    p: 2,
+                    fontSize: { xs: 15, sm: 20, lg: 25 },
+                  }}
+                >
+                  PER SESSION RS.700
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
 
-           {/* Card-two */}
+          {/* Card-two */}
           <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Card >
+            <Card sx={{ boxShadow: 3, height: { sx: 600, sm: 700, lg: 850 } }}>
               <Box
-              component={'img'}
+                component={"img"}
                 src="https://res.cloudinary.com/dcruh7av2/image/upload/v1757331324/Service-two-pic_jjqxlu.png"
-                sx={{width:"100%",height:400}}
-                
+                sx={{
+                  width: "100%",
+                  height: { sx: 300, sm: 400, lg: 500 },
+                  p: 2,
+                }}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center",color:"rgb(89,89,89)",fontSize:{xs:30,sm:40,md:50}, fontFamily:"Ephesis"}}>
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{
+                    textAlign: "center",
+                    color: "rgb(89,89,89)",
+                    fontSize: { xs: 30, sm: 40, md: 50 },
+                    fontFamily: "Ephesis",
+                  }}
+                >
                   Portrait
                 </Typography>
-                <Typography variant="body2"sx={{fontSize:{xs:15,sm:20,md:28},fontFamily:"Cormorant Garamond"}}>
-                 Atleast 10 High Quality Photos <br />
-                 Professionally Edited <br />
-                 Hourly rates applied <br />
-                 Videographer subject to charge <br />
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: { xs: 15, sm: 20, md: 28 },
+                    fontFamily: "Cormorant Garamond",
+                    p: 2,
+                  }}
+                >
+                  Atleast 10 High Quality Photos <br />
+                  Professionally Edited <br />
+                  Hourly rates applied
+                </Typography>
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{
+                    color: "rgb(187,169,133)",
+                    fontFamily: "Raleway",
+                    letterSpacing: 3,
+                    p: 2,
+                    fontSize: { xs: 15, sm: 20, lg: 25 },
+                  }}
+                >
+                  PER SESSION RS.700
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
 
-           {/* Card - third */}
+          {/* Card - third */}
           <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Card >
+            <Card sx={{ boxShadow: 3, height: { sx: 600, sm: 700, lg: 850 } }}>
               <Box
-                component={'img'}
+                component={"img"}
                 src="https://res.cloudinary.com/dcruh7av2/image/upload/v1757331324/Service-third-pic_cnvr3s.png"
-                sx={{width:'100%',height:400}}
+                sx={{
+                  width: "100%",
+                  height: { sx: 300, sm: 400, lg: 500 },
+                  p: 2,
+                }}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div" sx={{textAlign:"center",color:"rgb(89,89,89)",fontSize:{xs:"30px",sm:"40px",md:"50px"}, fontFamily:"Ephesis"}}>
-                 Engagement
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{
+                    textAlign: "center",
+                    color: "rgb(89,89,89)",
+                    fontSize: { xs: "30px", sm: "40px", md: "50px" },
+                    fontFamily: "Ephesis",
+                  }}
+                >
+                  Engagement
                 </Typography>
-                <Typography variant="body2"sx={{fontSize:{xs:15,sm:20,md:28},fontFamily:"Cormorant Garamond"}}>
-                200 High-Quality Photos <br />
-                3 Hours HD Footage <br />
-                *Additional Photographer subject to charge <br />
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontSize: { xs: 15, sm: 20, md: 28 },
+                    fontFamily: "Cormorant Garamond",
+                    p: 2,
+                  }}
+                >
+                  200 High-Quality Photos <br />
+                  3 Hours HD Footage <br />
+                  *Additional Photographer subject to charge <br />
+                </Typography>
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{
+                    color: "rgb(187,169,133)",
+                    fontFamily: "Raleway",
+                    letterSpacing: 3,
+                    p: 2,
+                    fontSize: { xs: 15, sm: 20, lg: 25 },
+                  }}
+                >
+                  PER SESSION RS.700
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
         </Grid>
-    
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            justifyContent: "center",
+            alignItems: "center",
+            m:5
+          }}
+        >
+          
+          <Button variant="outlined" sx={{ m: 10, borderColor:'rgb(187,160,133)', color:"rgb(69,69,69)",fontFamily:"Cormorant Garamond" , fontSize:{xs:15,sm:20,lg:25}}}>
+            GET IN TOUCH
+          </Button>
+        </Stack>
       </Box>
+
+      {/* Second Section*/}
+        <Stack
+        direction='column'
+         
+          sx={{
+            alignItems:'center',
+            width:"100%",
+            height:{xs:210,sm:400},
+            backgroundColor:'rgb(233,225,217)'
+          }}
+        >
+          <Box component='img'
+          src="https://res.cloudinary.com/dcruh7av2/image/upload/v1757399406/Vector_syzq86.png"
+          sx={{p:3,height:{xs:90,sm:150},width:{xs:90,sm:150}}}
+          />
+          <Typography variant="h3"
+             sx={{
+              width:'80%',
+              fontSize:{xs:20,sm:40,lg:60},
+              p:2,
+              textAlign:'center',
+              color :'rgb(79,79,79)',
+              fontFamily:'Cormorant Garamond'
+          }}
+          >
+            Celebrate your love with stunning images that will be cherished for a lifetime
+          </Typography>
+
+        </Stack>
+
+        {/* Third Section  */}
+
+        {/* Third Section Main- Container */}
+        <Box
+        sx={{
+          paddingTop:5,
+          width:'90%',
+          margin:'auto'
+        }}
+        >
+          {/* Third Section Heading */}
+           <Typography
+          variant="h4"
+          gutterBottom
+          sx={{
+            letterSpacing: "8px",
+            color: "rgb(187,160,133)",
+            textAlign: "center",
+            fontSize: { xs: 20, sm: 30 },
+            fontFamily: "Raleway",
+          }}
+        >
+          PROCESS
+        </Typography>
+
+        {/* Third Section Sub-Heading */}
+        <Typography
+          sx={{
+            color: "rgb(79,79,79)",
+            fontWeight: "100",
+            textAlign: "center",
+            fontSize: { xs: 40, sm: 50, md: 60 },
+            fontFamily: "Cormorant Garamond",
+          }}
+          gutterBottom
+        >
+          What to Expect
+        </Typography>
+
+          {/* Grid Container */}
+          <Grid  container spacing={5}>
+
+            {/* First Block*/}
+            <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+              <Box
+              component='img'
+              src="https://res.cloudinary.com/dcruh7av2/image/upload/v1757408240/Rectangle_443_zm9vsi.png"
+              sx={{width:'100%',height:{lg:600}}}
+              >
+              </Box>
+            </Grid>
+
+            {/* Second Block */}
+            <Grid size={{xs:12,sm:6,lg:4}} >
+              <Typography variant="h3" 
+                sx={{
+                  textAlign:'center',
+                  borderBottom:2, 
+                  fontFamily:'Cormorant',
+                  fontWeight:'500',
+                  fontSize:{xs:50,sm:70,lg:120},
+                  color:'rgb(181,139,97)'
+                }}
+              >
+                1
+              </Typography>
+              <Typography 
+                sx={{
+                  color:'rgb(45,45,45)',
+                  textAlign:'center',
+                  fontSize:{xs:20,sm:25,lg:30},
+                  fontFamily:'Cormorant Garamond',
+                 
+                }}
+              >
+                BREAKING THE ICE
+              </Typography>
+              <Typography variant="body1"
+                sx={{
+                  paddingTop:5,
+                  textAlign:'center',
+                  fontSize:{xs:18,sm:20,lg:25},
+                  fontFamily:'Cormorant Garamond',
+                  color:'rgb(45,45,45)'
+                }}
+              >
+                Lorem ipsum dolor sit amet as a consectetur. Rutrum ins tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam.
+              </Typography>
+            </Grid>
+
+            {/* Third Block */}
+             <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+              <Box
+              component='img'
+              src="https://res.cloudinary.com/dcruh7av2/image/upload/v1757408241/Rectangle_442_vmq7qh.png"
+              sx={{width:'100%',height:{lg:600}}}
+              >
+              </Box>
+            </Grid>
+
+            {/* Fourth Block */}
+                <Grid size={{xs:12,sm:6,lg:4}} >
+              <Typography variant="h3" 
+                sx={{
+                  textAlign:'center',
+                  borderBottom:2, 
+                  fontFamily:'Cormorant',
+                  fontWeight:'500',
+                  fontSize:{xs:50,sm:70,lg:120},
+                  color:'rgb(181,139,97)'
+                }}
+              >
+                2
+              </Typography>
+              <Typography 
+                sx={{
+                  color:'rgb(45,45,45)',
+                  textAlign:'center',
+                  fontSize:{xs:20,sm:25,lg:30},
+                  fontFamily:'Cormorant Garamond',
+                 
+                }}
+              >
+                PLANNING & PREPARATION
+              </Typography>
+              <Typography variant="body1"
+                sx={{
+                  paddingTop:5,
+                  textAlign:'center',
+                  fontSize:{xs:18,sm:20,lg:25},
+                  fontFamily:'Cormorant Garamond',
+                  color:'rgb(45,45,45)'
+                }}
+              >
+                Lorem ipsum dolor sit amet as a consectetur. Rutrum ins tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam.
+              </Typography>
+            </Grid>
+
+            {/* Fifth Block */}
+             <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+              <Box
+              component='img'
+              src="https://res.cloudinary.com/dcruh7av2/image/upload/v1757408240/Author_Bio_Photo_ohklep.png"
+              sx={{width:'100%',height:{lg:600}}}
+              >
+              </Box>
+            </Grid>
+
+            {/* Sixth Block */}
+             <Grid size={{xs:12,sm:6,lg:4}} >
+              <Typography variant="h3" 
+                sx={{
+                  textAlign:'center',
+                  borderBottom:2, 
+                  fontFamily:'Cormorant',
+                  fontWeight:'500',
+                  fontSize:{xs:50,sm:70,lg:120},
+                  color:'rgb(181,139,97)'
+                }}
+              >
+                3
+              </Typography>
+              <Typography 
+                sx={{
+                  color:'rgb(45,45,45)',
+                  textAlign:'center',
+                  fontSize:{xs:20,sm:25,lg:30},
+                  fontFamily:'Cormorant Garamond',
+                 
+                }}
+              >
+                SESSION COVERAGE
+              </Typography>
+              <Typography variant="body1"
+                sx={{
+                  paddingTop:5,
+                  textAlign:'center',
+                  fontSize:{xs:18,sm:20,lg:25},
+                  fontFamily:'Cormorant Garamond',
+                  color:'rgb(45,45,45)'
+                }}
+              >
+                Lorem ipsum dolor sit amet as a consectetur. Rutrum ins tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam.
+              </Typography>
+            </Grid>
+
+            {/* Seventh Block */}
+              <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+              <Box
+              component='img'
+              src="https://res.cloudinary.com/dcruh7av2/image/upload/v1757408241/Rectangle_450_vp67ns.png"
+              sx={{width:'100%',height:{lg:600}}}
+              >
+              </Box>
+            </Grid>
+
+            {/* Eigth Block */}
+            <Grid size={{xs:12,sm:6,lg:4}} >
+              <Typography variant="h3" 
+                sx={{
+                  textAlign:'center',
+                  borderBottom:2, 
+                  fontFamily:'Cormorant',
+                  fontWeight:'500',
+                  fontSize:{xs:50,sm:70,lg:120},
+                  color:'rgb(181,139,97)'
+                }}
+              >
+                4
+              </Typography>
+              <Typography 
+                sx={{
+                  color:'rgb(45,45,45)',
+                  textAlign:'center',
+                  fontSize:{xs:20,sm:25,lg:30},
+                  fontFamily:'Cormorant Garamond',
+                 
+                }}
+              >
+                BREAKING THE ICE
+              </Typography>
+              <Typography variant="body1"
+                sx={{
+                  paddingTop:5,
+                  textAlign:'center',
+                  fontSize:{xs:18,sm:20,lg:25},
+                  fontFamily:'Cormorant Garamond',
+                  color:'rgb(45,45,45)'
+                }}
+              >
+                Lorem ipsum dolor sit amet as a consectetur. Rutrum ins tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam.
+              </Typography>
+            </Grid>
+            {/* Ninth Block */}
+            {
+              show && (
+                <Grid size={{ xs: 12, sm: 6, md: 4 }} >
+              <Box
+              component='img'
+              src="https://res.cloudinary.com/dcruh7av2/image/upload/v1757408241/Rectangle_449_i6aj0s.png"
+              sx={{width:'100%',height:{lg:600}}}
+              >
+              </Box>
+            </Grid>
+
+              )
+            }
+          </Grid>
+
+        </Box>
+
+  
+
     </>
   );
 }
