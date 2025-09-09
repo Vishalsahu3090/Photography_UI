@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <div className='background-image'>
-        <div className="nav-bar">
+    <div className='background'>
+        <div className="nav-bar-full">
         <div className="nav-bar-1">
         <Link to="/home">HOME</Link>
         <Link to="/about">ABOUT</Link>
