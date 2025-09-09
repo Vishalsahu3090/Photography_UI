@@ -1,14 +1,14 @@
-import Header2 from '../../Components/Header2/Header2.jsx'
-import Author from '../../assets/Author.png'
+
+
 import Box from '@mui/material/Box'
-import Vector from '../../assets/Vector.png'
-
+import Author from '../assets/Author.png'
+import Vector from '../assets/Vector.png'
 import { Typography,Card,CardActions,CardMedia,CardContent,Button } from "@mui/material";
-
+import Header2 from '../Components/Header2/Header2.jsx'
 const About = () => {
   return (
     <>
-      <Header2/>
+     <Header2/>
        <Box
       sx={{
         maxWidth: "900px",
