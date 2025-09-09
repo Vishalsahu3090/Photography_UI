@@ -9,10 +9,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-.nav-bar{
+.nav-bar-full{
     display: flex;
     gap: 3rem;
-    background-color: rgba(245,245,245,0.7);
+    background-color: rgba(245,245,245,0.5);
     width: 100%;
     justify-content: center;
 }
@@ -23,7 +23,7 @@
     margin-top: 1.5rem;
 }
 
-.nav-bar a{
+.nav-bar-full a{
     text-decoration: none;
     color: rgb(54, 54, 54);
     font-family: "Playfair Display SC", serif;
@@ -35,7 +35,7 @@
 
 }
 
-.background-image{
+.background{
     background-image: url('src/assets/headphoto.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ h1{
     /* padding-top: 10%; */
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
-p{
+.background-content p{
      font-family: "Cormorant Garamond", serif;
      color: #FFFFFF;
      font-size: 60px;
@@ -70,20 +70,20 @@ p{
 
 @media (max-width:767px) {
 
-    .background-image{
+    .background{
         width: 100vw;
     }
 
-    .nav-bar{
+    .nav-bar-full{
         width: 100vw;
         display: flex;
         gap: 1rem;
     }
-    .nav-bar img{
+    .nav-bar-full img{
         width: 100px;
     }
 
-    .nav-bar a{
+    .nav-bar-full a{
         font-size: 5px;
     }
 
@@ -108,20 +108,20 @@ p{
 
 @media (min-width:768px) and (max-width:1024px) {
 
-    .background-image{
+    .background{
         width: 100vw;
     }
 
-    .nav-bar{
+    .nav-bar-full{
         width: 100vw;
         display: flex;
         gap: 1rem;
     }
-    .nav-bar img{
+    .nav-bar-full img{
         width: 130px;
     }
 
-    .nav-bar a{
+    .nav-bar-full a{
         font-size: 12px;
     }
 
