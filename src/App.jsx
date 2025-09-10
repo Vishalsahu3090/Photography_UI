@@ -3,7 +3,6 @@ import {theme} from './theme/theme'
 import Home from './Pages/Home'
 import About from './Pages/About/About'
 import Contact from './Pages/Contact'
-import Portfolio from './Pages/Portfolio'
 import Services from './Pages/Services'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
@@ -22,7 +21,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/services' element={<Services/>}/>
-          <Route path='/portfolio' element={<Portfolio/>}/>
+         
           
         </Routes>
       </BrowserRouter>
