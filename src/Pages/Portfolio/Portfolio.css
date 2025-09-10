@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading-section{
+    text-align: center;
+    margin: 5% auto;
+}
+
+.port{
+    font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: medium;
+  color: rgb(187, 160, 133);
+  line-height: 3rem;
+  letter-spacing: 0.4rem;
+}
+
+.high{
+     font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+  color: #5b5b5b;
+}
+
+.card-section{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.card-btn{
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+
+.card-btn button{
+  font-family: "Cormorant Garamond", serif;
+  padding: 1% 2%;
+  font-size: 1.2rem;
+  color: #454545;
+  border: 1px solid #BBA085;
+  cursor: pointer;
+  margin-bottom: 4%;
+  background-color: whitesmoke;
+}
+
+.second-background{
+
+  background-image: url("../../assets/second-background.png");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-size: cover;
+}
+
+.main-back-content{
+  padding: 10px;
+   background-color: rgba(255,255,255,0.9);
+   margin: 10%;
+}
+
+
+
+.back-content{
+  background-color: rgba(255,255,255,0.3);
+  border: 3px solid #BBA085 ;
+  padding: 3rem 4rem;
+}
+
+.back-content h2{
+  font-family: "Ephesis", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #BBA085;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.back-content p{
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+
+.high{ 
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.second-background{
+  width: 100%;
+}
+
+.main-back-content{
+  padding: 2px;
+   background-color: rgba(255,255,255,0.9);
+   margin: 10%;
+}
+
+
+
+.back-content{
+  border: 1px solid #BBA085;
+    padding: 0.5rem 1rem;
+}
+
+.back-content h2{
+  font-size: 1.5rem;
+}
+
+.back-content p{
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+
+}
