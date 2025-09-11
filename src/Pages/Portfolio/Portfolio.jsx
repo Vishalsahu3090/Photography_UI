@@ -10,6 +10,7 @@ import card6 from '../../assets/card6.png'
 import card7 from '../../assets/card7.png'
 import card8 from '../../assets/card8.png'
 import card9 from '../../assets/card9.png'
+import card from '../../assets/443.png'
 
 function Portfolio(){
     return(
@@ -49,6 +50,21 @@ function Portfolio(){
                 <p>I guarantee breathtaking wedding photos that perfectly capture the <br /> magic of your special day, or your money back</p>
             </div>
         </div>
+        </div>
+
+    {/* third section */}
+
+        <div className="third-section">
+            <div className="text-div">
+                <p className="port"> YOU'RE PERFECT</p>
+                <p className="cursive"> Stay Beautiful</p>
+                <p className="div-para">Lorem ipsum dolor sit amet consectetur. Ac in bibendum pharetra justo nullam est placerat. Eget tortor lacus porta pellentesque duis velit habitant nisl dignissim. </p>
+                <button>Enquire Now</button>
+            </div>
+
+            <div className="img-div">
+                <img src= {card} />
+            </div>
         </div>
         
     </>

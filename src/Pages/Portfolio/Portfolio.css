@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -102,6 +104,52 @@
   font-size: 1.5rem;
 }
 
+.third-section{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  padding-left: 4rem;
+  background-color: #f5f5f5;
+}
+
+.text-div{
+  padding-top: 7rem;
+}
+
+.cursive{
+  font-family: "Corinthia", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: #6c6c6c;
+  letter-spacing: 5%;
+}
+
+.div-para{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  color: #4f4f4f;
+}
+
+.text-div button{
+  font-family: "Cormorant Garamond", serif;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.3rem;
+  margin: 3rem;
+  background-color: #E9E1D9;
+  border: none;
+  color: #454545;
+}
+
+
+.img-div{
+  width: 100%;
+  
+}
+
+.img-div img{
+  width: 70%;
+}
 
 
 
@@ -155,6 +203,10 @@
   font-family: "Cormorant Garamond", serif;
   text-align: center;
   font-size: 0.5rem;
+}
+
+.img-div img{
+ display: none;
 }
 
 
