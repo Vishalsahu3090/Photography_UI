@@ -16,7 +16,7 @@ const Header = () => {
         <img src={logo} />
         <div className="nav-bar-1">
         <Link to="/portfolio">PORTFOLIO</Link>
-        <Link to="/blog">BLOG</Link>
+        <Link to="/gallery">Gallery</Link>
         <Link to="/contact">CONTACT</Link>
         </div>
         </div>
