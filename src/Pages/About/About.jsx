@@ -47,7 +47,7 @@ const About = () => {
     </div>
 
         {/* third section */}
-      <div className="third-section">
+      <div className="third-section-about">
       
       <div className="heading">
       <p className='para1'>GET TO KNOW</p>
