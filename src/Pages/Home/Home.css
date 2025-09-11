@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+/* first section */
+
+.leaf-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+    background-color: #f4f4f4;
+}
+
+.leaf-para{
+font-family: "Cormorant Garamond", sans-serif;
+font-size: 2.5rem;
+font-style: normal;
+color: #4f4f4f;
+width: 50%;
+align-items: center;
+}
+
+/* third section */
+
+.price-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+/* fourth section */
+
+.fourth-section{
+    background-image: url('https://res.cloudinary.com/dcruh7av2/image/upload/v1757596401/Hero_Image_phoizw.png');
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+}
+
+.env-head{
+    font-family: "Ephesis", cursive;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.env-para{
+    font-family: "Cormorant Garamond", sans-serif;
+font-size: 1.5rem;
+font-style: normal;
+color: #414141;
+text-align: center;
+}
+
+.envolpe-border{
+    padding: 0.5rem;
+   background-color: #FFFFFF;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60%;  
+}
+
+.envolpe-div{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 3px solid #B58B61;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+
+/* first section */
+
+.leaf-section{
+    padding: 10%;
+}
+
+.leaf-para{
+font-size: 1.2rem;
+width: 80%;
+}
+
+/* third section */
+
+.price-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 2rem;
+}
+
+/* fourth section */
+
+.fourth-section{
+    background-size: 100%;
+}
+
+.env-head{
+    font-family: "Ephesis", cursive;
+    font-style: normal;
+    font-size: 0.5rem;
+}
+
+.env-para{
+font-size: 0.5rem;
+font-style: normal;
+color: #414141;
+text-align: center;
+}
+
+.envolpe-border{
+    padding: 0.2rem;
+    width: 30%;
+    margin-left: 80%;  
+}
+
+.envolpe-div{
+    width: 100%;
+    border: 1px solid #B58B61;
+    padding: 0.5rem;
+}
+
+.envolpe-div img{
+    width: 30%;
+}
+
+
+
+
+
+
+
+    
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+.price-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 2rem 4rem;
+}
+
+.venue{
+    font-family: "Ephesis", cursive;
+    font-style: normal;
+    font-size: 3rem;
+    color: #585858;
+}
+.session{
+    font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #5b5b5b;
+    
+
+}
+.price{
+    font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3rem;
+  color: #5b5b5b;
+
+}
+
+.btn-more{
+     font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: #484848;
+  background-color: #E9E1D9;
+  border: none;
+    
+}
