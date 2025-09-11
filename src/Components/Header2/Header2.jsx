@@ -15,7 +15,7 @@ const Header2 = () => {
         <img src={logo} />
         <div className="nav-bar-1">
         <Link className='link' to="/portfolio">PORTFOLIO</Link>
-        <Link className='link' to="/blog">BLOG</Link>
+        <Link className='link' to="/gallery">Gallery</Link>
         <Link className='link' to="/contact">CONTACT</Link>
         </div>
         </div>
