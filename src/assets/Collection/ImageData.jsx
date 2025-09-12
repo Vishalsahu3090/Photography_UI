@@ -48,6 +48,9 @@ const itemData = [
   {
     img: "https://res.cloudinary.com/dcruh7av2/image/upload/v1757408241/Rectangle_442_vmq7qh.png",
   },
+   {
+    img: "https://res.cloudinary.com/dcruh7av2/image/upload/v1757408240/Rectangle_443_zm9vsi.png",
+  },
 ];
 
 const showedImages=itemData.slice(0,15);
