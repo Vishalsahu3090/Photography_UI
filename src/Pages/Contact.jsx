@@ -144,6 +144,8 @@ function Contact() {
         </Grid>
           )
         }
+
+        {/* Third Section */}
         
         <Grid size={{ xs: 12, sm: 6, lg: 6 }}>
           <Box

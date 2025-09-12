@@ -6,7 +6,6 @@ import Contact from './Pages/Contact'
 import Portfolio from './Pages/Portfolio/Portfolio'
 import Services from './Pages/Services'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
 import Gallery from './Pages/Gallery'
 
 
@@ -26,7 +25,6 @@ function App() {
           <Route path='/services' element={<Services/>}/>
           <Route path='/portfolio' element={<Portfolio/>}/>
           <Route path='/gallery' element={<Gallery/>}/>
-          
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
