@@ -7,6 +7,8 @@ import group1 from '../../assets/group1.png'
 import group2 from '../../assets/group2.png'
 import group3 from '../../assets/group3.png'
 import env from '../../assets/env.png'
+import featured1 from '../../assets/featured-1.png';
+import featured2 from '../../assets/featured-2.png';
 import './Home.css'
 
 function Home(){
@@ -57,7 +59,7 @@ function Home(){
 
     {/* fourth section */}
 
-        <div className="fourth-section">
+        <div className="fourth-section-home">
             <div className="envolpe-border">
             <div className="envolpe-div">
                 <img src={env} />
@@ -66,6 +68,29 @@ function Home(){
             </div>
             </div>
         </div>
+
+    {/* fiveth section */}
+
+    <div className="heading">
+        <div className="port">PORTFOLIO</div>
+        <div className="high">Featured Story</div>
+    </div>
+
+        <div className="fiveth-section">
+            <div className="featured-text">
+                <p className="num">01</p>
+                <p className="env-head" style={{color: '#414141'}}>Richardo & Michelle</p>
+                <p className="env-para" style={{textAlign:"start"}}>Lorem ipsum dolor sit amet consecte Dignissim consectetur tristique purus vehicula felis velit.</p>
+            </div>
+
+            <div className="featured-images">
+                <img src={featured1}/>
+                <img src={featured2}/>
+            </div>
+
+        </div><br />
+         <button className="btn-more" >View Gallery</button>
+
 
     </>
     );
