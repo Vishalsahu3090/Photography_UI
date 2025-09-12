@@ -22,7 +22,7 @@ export default function Gallery() {
   //Properties for mobile ,tablet and laptop
   if (ismobile) {
     column = 2;
-    rowHeight = 200;
+    rowHeight = 250;
     space=12;
   } else if (tablet) {
     column = 3;
