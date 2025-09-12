@@ -33,10 +33,11 @@ align-items: center;
 
 /* fourth section */
 
-.fourth-section{
+.fourth-section-home{
     background-image: url('https://res.cloudinary.com/dcruh7av2/image/upload/v1757596401/Hero_Image_phoizw.png');
     background-repeat: no-repeat;
     background-color: #f4f4f4;
+    
 }
 
 .env-head{
@@ -56,11 +57,11 @@ text-align: center;
 .envolpe-border{
     padding: 0.5rem;
    background-color: #FFFFFF;
-    width: 30%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 60%;  
+    margin-left: 70%;  
 }
 
 .envolpe-div{
@@ -69,10 +70,35 @@ text-align: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    
     border: 3px solid #B58B61;
     padding: 1rem;
 }
 
+.fiveth-section{
+    display: flex;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.featured-images{
+    display: flex;
+    gap: 1rem;
+}
+
+.featured-text{
+    padding: 1rem;
+    background-color: #f8f8f8;
+    margin-top: 6rem;
+}
+
+.num{
+    font-family: "Cormorant", sans-serif;
+font-size: 6rem;
+font-style: normal;
+font-weight: 600;
+color: #B58B61;
+}
 
 
 
@@ -109,7 +135,7 @@ width: 80%;
 
 /* fourth section */
 
-.fourth-section{
+.fourth-section-home{
     background-size: 100%;
 }
 
@@ -140,6 +166,35 @@ text-align: center;
 
 .envolpe-div img{
     width: 30%;
+}
+
+/* fiveth section */
+
+.fiveth-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-images{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.featured-text{
+    padding: 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.num{
+    font-family: "Cormorant", sans-serif;
+font-size: 3rem;
+font-style: normal;
+font-weight: 600;
+color: #B58B61;
 }
 
 
