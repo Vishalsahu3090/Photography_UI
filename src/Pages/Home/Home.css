@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 /* first section */
 
 .leaf-section{
@@ -79,6 +79,7 @@ text-align: center;
     display: flex;
     margin-right: 2rem;
     margin-top: 2rem;
+    width: 90%;
 }
 
 .featured-images{
@@ -99,6 +100,49 @@ font-style: normal;
 font-weight: 600;
 color: #B58B61;
 }
+
+.fiveth-button{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+/* eight section */
+
+.num-section-heading-eight{
+    font-family: "Cormorant Garamond", sans-serif;
+font-size: 2.5rem;
+text-align: center;
+font-style: normal;
+}
+
+
+.num-class{
+    font-family: "Playfair Display", serif;
+    font-size: 8rem;
+    color: #BBA085;
+    text-align: center;
+}
+
+.year-class{
+    font-family: "Ephesis", cursive;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #535353;
+    text-align: center;
+}
+
+.num-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider-container{
+   margin-top: 2rem;
+   margin-bottom: 2rem;   
+}
+
 
 
 
@@ -142,11 +186,11 @@ width: 80%;
 .env-head{
     font-family: "Ephesis", cursive;
     font-style: normal;
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 .env-para{
-font-size: 0.5rem;
+font-size: 0.4rem;
 font-style: normal;
 color: #414141;
 text-align: center;
@@ -154,7 +198,7 @@ text-align: center;
 
 .envolpe-border{
     padding: 0.2rem;
-    width: 30%;
+    width: 20%;
     margin-left: 80%;  
 }
 
@@ -183,10 +227,7 @@ text-align: center;
 }
 
 .featured-text{
-    padding: 1rem;
-    margin-top: 0.5rem;
-    width: 100%;
-    text-align: center;
+    display: none;
 }
 
 .num{
@@ -195,6 +236,26 @@ font-size: 3rem;
 font-style: normal;
 font-weight: 600;
 color: #B58B61;
+}
+
+/* eigth section */
+
+.num-section-heading-eight{
+font-size: 1rem;
+
+}
+
+.num-class{
+    font-size: 2.5rem;
+}
+
+.year-class{
+    font-size: 1rem;
+}
+
+.slider-container{
+   margin-top: 2rem;
+   margin-bottom: 2rem;   
 }
 
 
