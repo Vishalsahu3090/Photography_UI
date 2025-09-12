@@ -18,9 +18,6 @@ const itemData = [
     img: "https://res.cloudinary.com/dcruh7av2/image/upload/v1757408240/Rectangle_443_zm9vsi.png",
   },
   {
-    img: "https://res.cloudinary.com/dcruh7av2/image/upload/v1757490238/Rectangle_501_1_fmm13x.png",
-  },
-  {
     img: "https://res.cloudinary.com/dcruh7av2/image/upload/v1757408241/Rectangle_450_vp67ns.png",
   },
   {
@@ -44,14 +41,15 @@ const itemData = [
   {
     img: "https://res.cloudinary.com/dcruh7av2/image/upload/v1757408240/Rectangle_443_zm9vsi.png",
   },
-  {
-    img: "https://res.cloudinary.com/dcruh7av2/image/upload/v1757490238/Rectangle_501_1_fmm13x.png",
-  },
+ 
   {
     img: "https://res.cloudinary.com/dcruh7av2/image/upload/v1757408241/Rectangle_450_vp67ns.png",
   },
   {
     img: "https://res.cloudinary.com/dcruh7av2/image/upload/v1757408241/Rectangle_442_vmq7qh.png",
+  },
+   {
+    img: "https://res.cloudinary.com/dcruh7av2/image/upload/v1757408240/Rectangle_443_zm9vsi.png",
   },
 ];
 
