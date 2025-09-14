@@ -11,6 +11,7 @@ import MuiAccordionSummary, {
 } from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Header2 from "../Components/Header2/Header2.jsx";
+import Footer from "../Components/Footer";
 
 function Services() {
   // variables to check scren size
@@ -798,6 +799,7 @@ function Services() {
           </Accordion>
         </Box>
       </Stack>
+      <Footer/>
     </>
   );
 }

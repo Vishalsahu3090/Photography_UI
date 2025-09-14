@@ -5,7 +5,7 @@ import { Box, useMediaQuery } from "@mui/material";
 import Header2 from "../Components/Header2/Header2";
 import { Typography, Button } from "@mui/material";
 import {showedImages,remainImage} from "../assets/Collection/ImageData";
-
+import Footer from "../Components/Footer";
 
 export default function Gallery() {
   
@@ -118,7 +118,8 @@ export default function Gallery() {
         >
           { show? 'Show Less' : 'Show More'}
         </Button>
-      </Box>
+      </Box>     
+      <Footer/>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import Header2 from '../../Components/Header2/Header2.jsx'
+import Footer from '../../Components/Footer.jsx'
 import Author from '../../assets/Author.png'
 import Vector from '../../assets/Vector.png'
 import first from '../../assets/first.png'
@@ -10,6 +11,7 @@ import collage3 from '../../assets/443.png'
 import one from '../../assets/two-one.png'
 import two from '../../assets/two-two.png'
 import './About.css'
+
 
 const About = () => {
   return (
@@ -97,6 +99,7 @@ const About = () => {
       </div>
 
       </div>
+      <Footer/>
     
     </>
   )
