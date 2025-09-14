@@ -13,6 +13,7 @@ import Header2 from "../Components/Header2/Header2";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneAndroidOutlinedIcon from "@mui/icons-material/PhoneAndroidOutlined";
+import Footer from "../Components/Footer";
 
 function Contact() {
   const show = useMediaQuery("(min-width:768px)");
@@ -203,6 +204,7 @@ function Contact() {
           </Box>
         </Grid>
       </Grid>
+      <Footer/>
     </>
   );
 }

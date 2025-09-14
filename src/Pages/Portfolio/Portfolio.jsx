@@ -1,4 +1,5 @@
 import Header2 from "../../Components/Header2/Header2";
+import Footer from "../../Components/Footer";
 import './Portfolio.css'
 import Card from '../../Components/Card/Card'
 import card1 from '../../assets/card1.png'
@@ -66,7 +67,7 @@ function Portfolio(){
                 <img src= {card} />
             </div>
         </div>
-        
+        <Footer/>
     </>
 );
 }
